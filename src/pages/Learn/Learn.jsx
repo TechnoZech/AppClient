@@ -9,14 +9,14 @@ const Learn = () => {
 		bgLine: "bg-blue px-1 h-5 dark:bg-darkBlue",
 		frontLine: "bg-darkBlue h-3 dark:bg-blue2",
 		text: "text-darkBlue  text-2xl font-semibold mt-2 dark:text-blue2",
-		width: 60,
+		width: 29,
 	};
 
 	const CardProgressBarCSS = {
 		bgLine: "bg-darkBlue px-0.5 h-3 md:h-4 md:px-1 dark:bg-blue",
 		frontLine: "bg-blue h-2 md:h-2 dark:bg-darkBlue",
 		text: "text-darkBlue  text-md font-semibold mt-0.5 dark:text-blue2",
-		width: 80,
+		width: 81,
 	};
 	return (
 		<>
