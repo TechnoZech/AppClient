@@ -2,6 +2,7 @@
 import './NavbarStyle.css';
 import { NavLink } from "react-router-dom";
 import axios from "axios";
+import {NavHashLink} from 'react-router-hash-link'
 
 const Navbar = (props) => {
 
@@ -63,8 +64,8 @@ const Navbar = (props) => {
                 {
                     props.theme === 'dark' ?  <i className=" fa-regular fa-sun cursor-pointer hover:text-blue ease-in-out duration-300 text-lg " onClick={props.handleThemeSwitch}></i> : <i className="  fa-solid fa-moon cursor-pointer hover:text-blue ease-in-out duration-300 text-lg " onClick={props.handleThemeSwitch}></i>
                 }
-                <li onClick={openNav} className='font-medium text-lg  hover:text-blue cursor-pointer ease-in-out duration-300 '><a href="/#Courses">Courses</a></li>
-                <li onClick={openNav} className='font-medium text-lg  hover:text-blue cursor-pointer ease-in-out duration-300 '><a href="/#ourTeam">OurTeam</a></li>
+                <li onClick={openNav} className='font-medium text-lg  hover:text-blue cursor-pointer ease-in-out duration-300 '><NavHashLink smooth to="/#Courses">Courses</NavHashLink></li>
+                  <li onClick={openNav} className='font-medium text-lg  hover:text-blue cursor-pointer ease-in-out duration-300 '><NavHashLink smooth to="/#ourTeam">OurTeam</NavHashLink></li>
                 <li onClick={openNav} className='font-medium text-lg  hover:text-blue cursor-pointer ease-in-out duration-300 '><NavLink to="/learn">Learn</NavLink></li>
                 
                 {props.userObject ? <button onClick={multiple } className=" py-1.5 px-7 login-button text-white bg-blue hover:scale-105 ease-in-out duration-300 font-medium rounded" 
