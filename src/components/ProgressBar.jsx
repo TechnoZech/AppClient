@@ -3,6 +3,7 @@ import React from "react";
 const ProgressBar = (props) => {
 	const {bgLine, frontLine, text, width} = props.progressBarCSS;
 	// console.log(bgLine);
+	console.log(props);
 	return (
 		<>
 			<section>
